@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Area Calculator</title>
+
+        <link rel="stylesheet" href="./src/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h3>Rectangle</h3>
+            <input
+                class="input"
+                placeholder="Enter width"
+                type="text"
+                id="width"
+            />
+            <input
+                class="input"
+                placeholder="Enter height"
+                type="text"
+                id="height"
+            />
+            <p class="error" id="err"></p>
+
+            <button class="btn" type="button" id="perBtn">
+                Calculate Perimeter
+            </button>
+            <button class="btn" type="button" id="areaBtn">
+                Calculate Area
+            </button>
+            <p>Perimeter: <span id="perimeterResult"></span></p>
+            <p>Area: <span id="areaResult"></span></p>
+        </div>
+
+        <script src="./src/main.js"></script>
+    </body>
+</html>
